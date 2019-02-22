@@ -1,0 +1,25 @@
+{
+  "name": "ts-jest-initial-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc -w",
+    "lint": "tslint src/**/*.ts{,x} --project ./tsconfig.json",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@evojam/tslint-rules": "evojam/tslint-rules",
+    "@types/jest": "^23.3.3",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "roots": ["src"],
+    "testEnvironment": "node"
+  }
+}
